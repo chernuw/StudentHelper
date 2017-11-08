@@ -6,20 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resources/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="/resources/css/signin.css">
+    <link rel="stylesheet" href="resources/css/signin.css">
 </head>
 <body>
+
 ${message}
 
-<%--<form action="Authenticate" method="post">
-    Login: <input name="user"><br>
-    Password: <input name="password" type="password"><br>
-    <input type="submit" value="Login">
-</form>--%>
-
-
+<%--TODO: style for message--%>
 
 <div class="container">
 
@@ -43,8 +38,8 @@ ${message}
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="/resources/js/jquery-3.2.1.slim.min.js"></script>
-<script src="/resources/js/popper.min.js"></script>
-<script src="/resources/js/bootstrap.min.js"></script>
+<script src="resources/js/jquery-3.2.1.slim.min.js"></script>
+<script src="resources/js/popper.min.js"></script>
+<script src="resources/js/bootstrap.min.js"></script>
 </body>
 </html>

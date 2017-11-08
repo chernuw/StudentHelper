@@ -16,7 +16,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resources/css/bootstrap.min.css">
+
+
+    <script type="text/javascript" src="js/test.js"></script>
 </head>
 <body>
 <header class="header">
@@ -56,14 +59,18 @@
         </div>
     </div>
 </div>
+
 <footer class="footer">
     <jsp:include page="/WEB-INF/pages/template/footer.jsp"/>
 </footer>
 
+
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="/resources/js/jquery-3.2.1.slim.min.js"></script>
-<script src="/resources/js/popper.min.js"></script>
-<script src="/resources/js/bootstrap.min.js"></script>
+<script src="resources/js/jquery-3.2.1.slim.min.js"></script>
+<script src="resources/js/popper.min.js"></script>
+<script src="resources/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">buildUserTable();</script>
 </body>
 </html>

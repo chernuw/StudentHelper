@@ -1,6 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <head>
-    <link rel="stylesheet" href="/resources/css/font-awesome.css">
+    <link rel="stylesheet" href="/StudentHelper/resources/css/font-awesome.css">
 </head>
 <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-md-center">
     <div class="collapse navbar-collapse" id="navbarNav">
