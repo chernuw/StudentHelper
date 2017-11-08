@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration packages="edu.iba.sh.dao">
+    <Properties>
+        <Property name="mysqllog">${web:rootDir}\logs\mysql\</Property>
+        <Property name="db2log">${web:rootDir}\logs\db2\</Property>
+    </Properties>
+
+    <Appenders>
+        <Console name="STDOUT" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d [%t] %p %C.%M():%L - %m%n "/>
+        </Console>
+        <RollingFile name="MYSQLLOG" fileName="${mysqllog}mysql.log"
+                     filePattern="${mysqllog}archive\mysql-$${date:MM-dd-yyyy}.%i.log.gz">
+            <PatternLayout pattern="%d [%t] %p %C.%M():%L - %m%n"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="1 MB"/>
+            </Policies>
+        </RollingFile>
+        <RollingFile name="DB2LOG" fileName="${db2log}db2.log"
+                     filePattern="${db2log}archive\db2-$${date:MM-dd-yyyy}.%i.log.gz">
+            <PatternLayout pattern="%d [%t] %p %C.%M():%L - %m%n"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="1 MB"/>
+            </Policies>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <Logger name="edu.iba.sh.dao.mysql" level="trace">
+            <AppenderRef ref="MYSQLLOG"/>
+            <AppenderRef ref="STDOUT"/>
+        </Logger>
+        <Logger name="edu.iba.sh.dao.db2" level="trace">
+            <AppenderRef ref="DB2LOG"/>
+            <AppenderRef ref="STDOUT"/>
+        </Logger>
+    </Loggers>
+</Configuration>
