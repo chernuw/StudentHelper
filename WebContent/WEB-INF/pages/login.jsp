@@ -36,7 +36,7 @@ ${message}
         <input type="submit" class="btn btn-lg btn-primary btn-block" value="Sign in">
     </form>
 
-</div> <!-- /container -->
+</div>
 <footer class="footer">
     <jsp:include page="/WEB-INF/pages/template/footer.jsp"/>
 </footer>
